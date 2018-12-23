@@ -45,6 +45,7 @@
             this.lblUnitPriceUpdate = new System.Windows.Forms.Label();
             this.txtNameUpdate = new System.Windows.Forms.TextBox();
             this.lblStockAmountUpdate = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.dbxAdd.SuspendLayout();
             this.gbxUpdate.SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(174, 32);
+            this.dgvProducts.Location = new System.Drawing.Point(173, 101);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowTemplate.Height = 24;
             this.dgvProducts.Size = new System.Drawing.Size(758, 281);
@@ -119,7 +120,7 @@
             this.dbxAdd.Controls.Add(this.txtName);
             this.dbxAdd.Controls.Add(this.lblStockAmount);
             this.dbxAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dbxAdd.Location = new System.Drawing.Point(174, 319);
+            this.dbxAdd.Location = new System.Drawing.Point(173, 388);
             this.dbxAdd.Name = "dbxAdd";
             this.dbxAdd.Size = new System.Drawing.Size(345, 238);
             this.dbxAdd.TabIndex = 3;
@@ -146,7 +147,7 @@
             this.gbxUpdate.Controls.Add(this.txtNameUpdate);
             this.gbxUpdate.Controls.Add(this.lblStockAmountUpdate);
             this.gbxUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gbxUpdate.Location = new System.Drawing.Point(608, 319);
+            this.gbxUpdate.Location = new System.Drawing.Point(607, 388);
             this.gbxUpdate.Name = "gbxUpdate";
             this.gbxUpdate.Size = new System.Drawing.Size(345, 238);
             this.gbxUpdate.TabIndex = 4;
@@ -211,11 +212,22 @@
             this.lblStockAmountUpdate.TabIndex = 1;
             this.lblStockAmountUpdate.Text = "StockAmount";
             // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(817, 28);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(93, 51);
+            this.btnRemove.TabIndex = 5;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 670);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.gbxUpdate);
             this.Controls.Add(this.dbxAdd);
             this.Controls.Add(this.dgvProducts);
@@ -250,6 +262,7 @@
         private System.Windows.Forms.Label lblUnitPriceUpdate;
         private System.Windows.Forms.TextBox txtNameUpdate;
         private System.Windows.Forms.Label lblStockAmountUpdate;
+        private System.Windows.Forms.Button btnRemove;
     }
 }
 

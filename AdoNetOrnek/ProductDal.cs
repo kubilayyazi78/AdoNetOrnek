@@ -76,5 +76,13 @@ namespace AdoNetOrnek
             command.ExecuteNonQuery();
             _connection.Close();
         }
+        public void Delete(int id)
+        {
+            ConnectionControl();
+            SqlCommand command = new SqlCommand("delete from products where Id= @id", _connection);
+            command.Parameters.AddWithValue("@id", id);
+            command.ExecuteNonQuery();
+            _connection.Close();
+        }
     }
 }
